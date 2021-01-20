@@ -9,6 +9,8 @@ import HomeScreen from './Screens/HomeScreen';
 import ProductScreen from './Screens/ProductScreen';
 import CartScreen from './Screens/CartScreen';
 import LoginScreen from './Screens/LoginScreen';
+import RegisterScreen from './Screens/RegisterScreen';
+import ProfileScreen from './Screens/ProfileScreen';
 
 const App = () => {
   return (
@@ -21,6 +23,8 @@ const App = () => {
           {/* /:id? indicates id is optional because when we click in cart icon id is not necessary */}
           <Route path='/cart/:id?' component={CartScreen} />
           <Route path='/login' component={LoginScreen} />
+          <Route path='/register' component={RegisterScreen} />
+          <Route path='/profile' component={ProfileScreen} />
         </Container>
       </main>
       <Footer />
