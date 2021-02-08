@@ -13,7 +13,11 @@ import {
   userDetailsReducer,
   userUpdateProfileReducer,
 } from './Reducers/userReducers';
-import { orderCreateReducer } from './Reducers/orderReducers';
+import {
+  orderCreateReducer,
+  orderDetailsReducer,
+  orderPayReducer,
+} from './Reducers/orderReducers';
 
 const reducer = combineReducers({
   productList: productListReducer,
@@ -24,6 +28,8 @@ const reducer = combineReducers({
   userDetails: userDetailsReducer,
   userUpdateProfile: userUpdateProfileReducer,
   orderCreate: orderCreateReducer,
+  orderDetails: orderDetailsReducer,
+  orderPay: orderPayReducer,
 });
 
 // Accessing from local storage

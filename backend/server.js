@@ -26,6 +26,11 @@ app.use('/api/products', productRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/orders', orderRoutes);
 
+// Paypal route
+app.get('/api/config/paypal', (req, res) =>
+  res.send(process.env.PAYPAL_CLIENT_ID)
+);
+
 // the code has be moved to middleware folder for good look.
 // Handling 404 code
 app.use(notFound);
